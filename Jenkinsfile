@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent any 
 
     environment {
         DOCKERHUB_CREDENTIAL_ID = '511' // Use the correct credential ID you set in Jenkins
