@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                    
-                    sh 'npm test' 
+                    sh 'npm test'  
                 }
             }
         }
