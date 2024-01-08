@@ -1,3 +1,4 @@
+echo 'building'
 pipeline {
     agent any
     environment {
