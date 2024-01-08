@@ -9,6 +9,7 @@ pipeline {
         stage('Build and Push Image') {
             steps {
                 script {
+                    echo 'Building and Pushing Docker Image...'
                     // Execute Docker build command for the entire project
                     sh 'docker build -t alaaeddinedorai/devops:latest .'
 
