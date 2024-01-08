@@ -17,21 +17,20 @@ pipeline {
             }
         }
 
-       
-
-        stage('Build proj') {
-           
+        stage('Build and Push Image') {
             steps {
                 dir('front') {
-			sh 'docker push alaaeddinedorai/devops:latest'
+                    sh 'docker build -t alaaeddinedorai/devops:latest .'
+                    sh 'docker push alaaeddinedorai/devops:latest'
                 }
             }
         }
 
-        stage('logout') {
+        stage('Logout') {
             steps {
                 sh 'docker logout'
             }
         }
     }
 }
+
