@@ -37,7 +37,7 @@ pipeline {
 
         stage('Cleanup') {
             steps {
-                script {
+                script { 
                     sh 'rm -rf temporary_files'
                 }
             }
