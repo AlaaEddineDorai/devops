@@ -3,7 +3,7 @@ pipeline {
     agent any   
 
     environment {
-        DOCKERHUB_CREDENTIAL_ID = '51' 
+        DOCKERHUB_CREDENTIAL_ID = credentials('51') 
     }
 
     stages {
