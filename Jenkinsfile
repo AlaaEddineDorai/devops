@@ -19,7 +19,7 @@ pipeline {
                     sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
                 }
 
-                sh 'docker push alaaeddinedorai/devops:latest'        
+                sh 'docker push alaaeddinedorai/devops:latest'         
             }
         }
     }
